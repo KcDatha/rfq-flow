@@ -1,0 +1,13 @@
+# Dependencies for the Vercel Python function (api/index.py).
+# Local development uses backend/requirements.txt instead.
+fastapi
+sqlmodel
+pydantic
+pydantic-settings
+langgraph
+langchain-core
+langchain-anthropic
+langchain-openai
+langchain-google-genai
+pypdf
+python-multipart
