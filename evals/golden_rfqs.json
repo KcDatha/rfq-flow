@@ -1,0 +1,508 @@
+[
+ {
+  "expected_line_items": [
+   {
+    "material_grade": "ASTM A106 GRADE B",
+    "nominal_size": "4\"",
+    "quantity": 20,
+    "schedule_or_rating": "SCH 40",
+    "should_flag": false
+   },
+   {
+    "material_grade": "ASTM A106 GRADE B",
+    "nominal_size": "2\"",
+    "quantity": 10,
+    "schedule_or_rating": "SCH 40",
+    "should_flag": false
+   }
+  ],
+  "id": "clean-pipe-run",
+  "raw_input": "Please quote:\n20 pcs 4\" SCH 40 A106 Gr B pipe, 20 ft lengths\n10 pcs 2\" SCH 40 A106 Gr B pipe"
+ },
+ {
+  "expected_line_items": [
+   {
+    "material_grade": "ASTM A106 GRADE B",
+    "nominal_size": "3\"",
+    "quantity": 6,
+    "schedule_or_rating": "SCH 80",
+    "should_flag": false
+   },
+   {
+    "material_grade": "ASTM A234 WPB",
+    "nominal_size": "3\"",
+    "quantity": 4,
+    "schedule_or_rating": "SCH 80",
+    "should_flag": false
+   }
+  ],
+  "id": "email-with-greeting",
+  "raw_input": "Hi team,\n\nWe need pricing on the below for the Baytown job. Need delivery by end of month if possible.\n\n6 ea 3\" SCH 80 A106 GR B pipe\n4 ea 3\" SCH 80 elbow 90 deg A234 WPB\n\nThanks,\nMike\nBayou Process Services"
+ },
+ {
+  "expected_line_items": [
+   {
+    "material_grade": "STAINLESS 316L",
+    "nominal_size": "2\"",
+    "quantity": 12,
+    "schedule_or_rating": "SCH 80",
+    "should_flag": false
+   },
+   {
+    "material_grade": "STAINLESS 316L",
+    "nominal_size": "2\"",
+    "quantity": 12,
+    "schedule_or_rating": "SCH 80",
+    "should_flag": false
+   },
+   {
+    "material_grade": "STAINLESS 316L",
+    "nominal_size": "2\"",
+    "quantity": 6,
+    "schedule_or_rating": "150#",
+    "should_flag": false
+   }
+  ],
+  "id": "stainless-fittings",
+  "raw_input": "RFQ - please quote\n12 ea 2\" SCH 80 316L elbow 90\n12 ea 2\" SCH 80 316L tee\n6 ea 2\" 316L flange 150#"
+ },
+ {
+  "expected_line_items": [
+   {
+    "material_grade": "ASTM A105",
+    "nominal_size": "3\"",
+    "quantity": 4,
+    "schedule_or_rating": "150#",
+    "should_flag": false
+   },
+   {
+    "material_grade": "ASTM A105",
+    "nominal_size": "6\"",
+    "quantity": 2,
+    "schedule_or_rating": "300#",
+    "should_flag": false
+   }
+  ],
+  "id": "valves-carbon",
+  "raw_input": "Need pricing on:\nQty: 4 - 3\" 150# gate valve A105 trim 8\nQty: 2 - 6\" 300# globe valve A105"
+ },
+ {
+  "expected_line_items": [
+   {
+    "material_grade": "MONEL 400",
+    "nominal_size": "2\"",
+    "quantity": 8,
+    "schedule_or_rating": "300#",
+    "should_flag": true
+   },
+   {
+    "material_grade": "MONEL 400",
+    "nominal_size": "2\"",
+    "quantity": 4,
+    "schedule_or_rating": "SCH 80",
+    "should_flag": true
+   }
+  ],
+  "id": "monel-exotic",
+  "raw_input": "Please quote the following, this is for a seawater service so material is critical:\n8 ea 2\" Monel 400 flange 300#\n4 ea 2\" Monel 400 elbow SCH 80"
+ },
+ {
+  "expected_line_items": [
+   {
+    "material_grade": "ASTM A106 GRADE B",
+    "nominal_size": "5\"",
+    "quantity": 6,
+    "schedule_or_rating": "SCH 40",
+    "should_flag": true
+   }
+  ],
+  "id": "invalid-size-5in",
+  "raw_input": "Quote please:\n6 pcs 5\" SCH 40 A106 Gr B pipe"
+ },
+ {
+  "expected_line_items": [
+   {
+    "material_grade": "ASTM A106 GRADE B",
+    "nominal_size": "10\"",
+    "quantity": 10,
+    "schedule_or_rating": "SCH 160",
+    "should_flag": false
+   },
+   {
+    "material_grade": "ASTM A106 GRADE B",
+    "nominal_size": "12\"",
+    "quantity": 2,
+    "schedule_or_rating": "SCH 120",
+    "should_flag": true
+   }
+  ],
+  "id": "invalid-schedule-combo",
+  "raw_input": "10 pcs 10\" SCH 160 A106 Gr B pipe\n2 pcs 12\" SCH 120 A106 Gr B pipe"
+ },
+ {
+  "expected_line_items": [
+   {
+    "material_grade": "ASTM A106 GRADE B",
+    "nominal_size": "1/2\"",
+    "quantity": 50,
+    "schedule_or_rating": "SCH 80",
+    "should_flag": false
+   },
+   {
+    "material_grade": "ASTM A106 GRADE B",
+    "nominal_size": "3/4\"",
+    "quantity": 50,
+    "schedule_or_rating": "SCH 80",
+    "should_flag": false
+   },
+   {
+    "material_grade": "ASTM A106 GRADE B",
+    "nominal_size": "1-1/2\"",
+    "quantity": 25,
+    "schedule_or_rating": "SCH 40",
+    "should_flag": false
+   }
+  ],
+  "id": "fraction-sizes",
+  "raw_input": "Small bore package:\n50 pcs 1/2\" SCH 80 A106 pipe\n50 pcs 3/4\" SCH 80 A106 pipe\n25 pcs 1-1/2\" SCH 40 A106 pipe"
+ },
+ {
+  "expected_line_items": [
+   {
+    "material_grade": "ASTM A53 GRADE B",
+    "nominal_size": "6\"",
+    "quantity": 500,
+    "schedule_or_rating": "STD",
+    "should_flag": false
+   }
+  ],
+  "id": "feet-of-pipe",
+  "raw_input": "We need 500 ft of 6 inch STD A53 Gr B pipe for a rack run. Price per foot is fine."
+ },
+ {
+  "expected_line_items": [
+   {
+    "material_grade": "ASTM A335 GRADE P22",
+    "nominal_size": "4\"",
+    "quantity": 8,
+    "schedule_or_rating": "SCH 80",
+    "should_flag": true
+   },
+   {
+    "material_grade": "ASTM A335 GRADE P22",
+    "nominal_size": "4\"",
+    "quantity": 4,
+    "schedule_or_rating": "SCH 80",
+    "should_flag": true
+   }
+  ],
+  "id": "unknown-alloy",
+  "raw_input": "Please quote:\n8 pcs 4\" SCH 80 A335 P22 pipe\n4 pcs 4\" SCH 80 A335 P22 elbow"
+ },
+ {
+  "expected_line_items": [
+   {
+    "material_grade": "ASTM A312 TP316L",
+    "nominal_size": "4\"",
+    "quantity": 15,
+    "schedule_or_rating": "SCH 40",
+    "should_flag": false
+   }
+  ],
+  "id": "tp316l-pipe",
+  "raw_input": "Quote:\n15 pcs 4\" SCH 40S A312 TP316L pipe\nNote sch 40S is fine to price as sch 40 equivalent if needed"
+ },
+ {
+  "expected_line_items": [
+   {
+    "material_grade": "INCONEL 625",
+    "nominal_size": "3\"",
+    "quantity": 2,
+    "schedule_or_rating": "600#",
+    "should_flag": true
+   },
+   {
+    "material_grade": "INCONEL 625",
+    "nominal_size": "3\"",
+    "quantity": 1,
+    "schedule_or_rating": "600#",
+    "should_flag": true
+   }
+  ],
+  "id": "inconel-exotic",
+  "raw_input": "2 ea 3\" Inconel 625 flange 600#\n1 ea 3\" Inconel 625 gate valve 600#"
+ },
+ {
+  "expected_line_items": [
+   {
+    "material_grade": "ASTM A106 GRADE B",
+    "nominal_size": "16\"",
+    "quantity": 4,
+    "schedule_or_rating": "STD",
+    "should_flag": false
+   },
+   {
+    "material_grade": "ASTM A106 GRADE B",
+    "nominal_size": "24\"",
+    "quantity": 4,
+    "schedule_or_rating": "SCH 40",
+    "should_flag": false
+   },
+   {
+    "material_grade": "ASTM A106 GRADE B",
+    "nominal_size": "16\"",
+    "quantity": 2,
+    "schedule_or_rating": "SCH 40",
+    "should_flag": false
+   }
+  ],
+  "id": "big-bore",
+  "raw_input": "Plant expansion package:\n4 pcs 16\" STD A106 Gr B pipe\n4 pcs 24\" SCH 40 A106 Gr B pipe\n2 pcs 16\" SCH 40 A106 Gr B elbow"
+ },
+ {
+  "expected_line_items": [
+   {
+    "material_grade": "",
+    "nominal_size": "3/4\"",
+    "quantity": 40,
+    "schedule_or_rating": null,
+    "should_flag": true
+   },
+   {
+    "material_grade": "STAINLESS 316L",
+    "nominal_size": "2\"",
+    "quantity": 20,
+    "schedule_or_rating": "150#",
+    "should_flag": false
+   }
+  ],
+  "id": "bolting",
+  "raw_input": "40 sets 3/4\" x 4-1/2\" stud bolt A193 B7 with 2H nuts\n20 ea 2\" 150# gasket spiral wound 316L"
+ },
+ {
+  "expected_line_items": [
+   {
+    "material_grade": "ASTM A106 GRADE B",
+    "nominal_size": "8\"",
+    "quantity": 0,
+    "schedule_or_rating": "SCH 40",
+    "should_flag": true
+   },
+   {
+    "material_grade": "ASTM A234 WPB",
+    "nominal_size": "8\"",
+    "quantity": 0,
+    "schedule_or_rating": "SCH 40",
+    "should_flag": true
+   }
+  ],
+  "id": "missing-quantity",
+  "raw_input": "Can you get me a price on 8\" SCH 40 A106 pipe?\nAlso need 8\" SCH 40 elbows, A234 WPB.\nNo quantities yet, just checking availability."
+ },
+ {
+  "expected_line_items": [
+   {
+    "material_grade": "ASTM A106 GRADE B",
+    "nominal_size": "2\"",
+    "quantity": 20,
+    "schedule_or_rating": "SCH 40",
+    "should_flag": false
+   },
+   {
+    "material_grade": "ASTM A106 GRADE B",
+    "nominal_size": "7\"",
+    "quantity": 5,
+    "schedule_or_rating": "SCH 40",
+    "should_flag": true
+   },
+   {
+    "material_grade": "ASTM A105",
+    "nominal_size": "2\"",
+    "quantity": 10,
+    "schedule_or_rating": "150#",
+    "should_flag": false
+   },
+   {
+    "material_grade": "HASTELLOY C276",
+    "nominal_size": "4\"",
+    "quantity": 3,
+    "schedule_or_rating": "300#",
+    "should_flag": true
+   }
+  ],
+  "id": "mixed-valid-invalid",
+  "raw_input": "Turnaround package - please quote all:\n20 pcs 2\" SCH 40 A106 Gr B pipe\n5 pcs 7\" SCH 40 A106 Gr B pipe\n10 ea 2\" 150# flange A105\n3 ea 4\" Hastelloy C276 valve 300#"
+ },
+ {
+  "expected_line_items": [
+   {
+    "material_grade": "ASTM A106 GRADE B",
+    "nominal_size": "4\"",
+    "quantity": 8,
+    "schedule_or_rating": "XS",
+    "should_flag": false
+   },
+   {
+    "material_grade": "ASTM A106 GRADE B",
+    "nominal_size": "4\"",
+    "quantity": 8,
+    "schedule_or_rating": "XS",
+    "should_flag": false
+   }
+  ],
+  "id": "xs-shorthand",
+  "raw_input": "8 pcs 4\" XS A106 pipe\n8 pcs 4\" XH A106 pipe"
+ },
+ {
+  "expected_line_items": [],
+  "id": "no-items-inquiry",
+  "raw_input": "Hi, do you guys stock stainless pipe in the Houston area? Looking for a new supplier for an upcoming project, will send specs once our engineer finalizes them. Thanks, Dana"
+ },
+ {
+  "expected_line_items": [
+   {
+    "material_grade": "DUPLEX 2205",
+    "nominal_size": "6\"",
+    "quantity": 6,
+    "schedule_or_rating": "SCH 80",
+    "should_flag": true
+   },
+   {
+    "material_grade": "DUPLEX 2205",
+    "nominal_size": "6\"",
+    "quantity": 4,
+    "schedule_or_rating": "SCH 80",
+    "should_flag": true
+   }
+  ],
+  "id": "duplex-exotic",
+  "raw_input": "Offshore package:\n6 pcs 6\" SCH 80 Duplex 2205 pipe\n4 ea 6\" SCH 80 Duplex 2205 elbow"
+ },
+ {
+  "expected_line_items": [
+   {
+    "material_grade": "ASTM A350 LF2",
+    "nominal_size": "4\"",
+    "quantity": 12,
+    "schedule_or_rating": "300#",
+    "should_flag": false
+   },
+   {
+    "material_grade": "ASTM A350 LF2",
+    "nominal_size": "6\"",
+    "quantity": 12,
+    "schedule_or_rating": "300#",
+    "should_flag": false
+   }
+  ],
+  "id": "lf2-low-temp",
+  "raw_input": "Cold service flanges:\n12 ea 4\" 300# flange A350 LF2\n12 ea 6\" 300# flange A350 LF2"
+ },
+ {
+  "expected_line_items": [
+   {
+    "material_grade": "API 5L GRADE B",
+    "nominal_size": "8\"",
+    "quantity": 2000,
+    "schedule_or_rating": "SCH 40",
+    "should_flag": false
+   }
+  ],
+  "id": "api5l-line-pipe",
+  "raw_input": "2000 ft 8\" SCH 40 API 5L Gr B pipe for a gathering line"
+ },
+ {
+  "expected_line_items": [
+   {
+    "material_grade": "ASTM A106 GRADE B",
+    "nominal_size": "3\"",
+    "quantity": 30,
+    "schedule_or_rating": "SCH 40",
+    "should_flag": false
+   },
+   {
+    "material_grade": "ASTM A106 GRADE B",
+    "nominal_size": "3\"",
+    "quantity": 10,
+    "schedule_or_rating": "SCH 80",
+    "should_flag": false
+   }
+  ],
+  "id": "s-slash-shorthand",
+  "raw_input": "Please quote:\ns/40 pipe A106B 3 in, qty 30 lengths\ns/80 pipe A106B 3 in, qty 10 lengths"
+ },
+ {
+  "expected_line_items": [
+   {
+    "material_grade": "ASTM A105",
+    "nominal_size": "1\"",
+    "quantity": 24,
+    "schedule_or_rating": "3000#",
+    "should_flag": false
+   },
+   {
+    "material_grade": "ASTM A105",
+    "nominal_size": "1\"",
+    "quantity": 24,
+    "schedule_or_rating": "3000#",
+    "should_flag": false
+   },
+   {
+    "material_grade": "ASTM A105",
+    "nominal_size": "2\"",
+    "quantity": 12,
+    "schedule_or_rating": "6000#",
+    "should_flag": false
+   }
+  ],
+  "id": "forged-fittings-3000",
+  "raw_input": "24 ea 1\" 3000# elbow A105 forged\n24 ea 1\" 3000# tee A105 forged\n12 ea 2\" 6000# coupling A105"
+ },
+ {
+  "expected_line_items": [
+   {
+    "material_grade": "STAINLESS 304",
+    "nominal_size": "3\"",
+    "quantity": 30,
+    "schedule_or_rating": "SCH 40",
+    "should_flag": false
+   },
+   {
+    "material_grade": "STAINLESS 304",
+    "nominal_size": "3\"",
+    "quantity": 10,
+    "schedule_or_rating": "SCH 40",
+    "should_flag": false
+   }
+  ],
+  "id": "304-stainless",
+  "raw_input": "Water plant job:\n30 pcs 3\" SCH 40 304 SS pipe\n10 ea 3\" SCH 40 304 SS elbow"
+ },
+ {
+  "expected_line_items": [
+   {
+    "material_grade": "ASTM A106 GRADE B",
+    "nominal_size": "6\"",
+    "quantity": 15,
+    "schedule_or_rating": "SCH 40",
+    "should_flag": false
+   },
+   {
+    "material_grade": "ASTM A234 WPB",
+    "nominal_size": "6\"",
+    "quantity": 15,
+    "schedule_or_rating": "SCH 40",
+    "should_flag": false
+   },
+   {
+    "material_grade": "ASTM A105",
+    "nominal_size": "6\"",
+    "quantity": 8,
+    "schedule_or_rating": "150#",
+    "should_flag": false
+   }
+  ],
+  "id": "table-paste",
+  "raw_input": "Item  Qty  Description\n1     15   6\" SCH 40 A106 GRB PIPE\n2     15   6\" SCH 40 A234 WPB ELBOW 90\n3     8    6\" 150# A105 WN FLANGE"
+ }
+]
