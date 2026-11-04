@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/api.ts","./src/main.tsx","./src/components/ReviewQueue.tsx","./src/components/SubmissionDetail.tsx","./src/components/Submissions.tsx","./src/components/SubmitForm.tsx","./src/components/badges.tsx","./vite.config.ts"],"version":"5.9.3"}
